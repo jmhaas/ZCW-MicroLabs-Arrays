@@ -53,7 +53,21 @@ public class ArrayParty {
 
         return output;
     }
-    //TODO Define the method compress
+
+
+
+
+
+
+
+    public String compressionArray(String[] inputArray){
+        String output = "*** Output ***";
+
+
+
+
+        return "";
+    }
 
     //TODO Define the method pack
 

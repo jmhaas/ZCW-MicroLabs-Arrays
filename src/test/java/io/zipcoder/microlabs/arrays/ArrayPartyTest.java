@@ -98,7 +98,26 @@ public class ArrayPartyTest {
         Assert.assertEquals("The result is not a palindrome", expected, actual);
     }
 
+    @Test
+    public void compressionArrayTest(){
+        //: Given
+        String [] compression = {"1,1,3,3,3,2,2,2,1,1,1,1,4,4,4,4"};
 
+        ArrayParty arrayParty = new ArrayParty();
+        String expected = "*** Output ***\n" +
+                "1\n" +
+                "3\n" +
+                "2\n" +
+                "1\n" +
+                "4";
+
+
+        //: When
+        String actual = arrayParty.compressionArray(compression);
+
+        //: Then
+        Assert.assertEquals("The result is not compressed", expected, actual);
+    }
 
 
 
