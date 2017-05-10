@@ -28,10 +28,16 @@ public class ArrayPartyTest {
     @Test
     public void lastElementTest(){
         //: Given
+        String[] breakfast = {"Sausage", "Eggs", "Beans", "Bacon", "Tomatoes", "Mushrooms"};
+        ArrayParty arrayParty = new ArrayParty();
+        String expected = "*** Output ***\n" +
+                "Mushrooms";
 
         //: When
+        String actual = arrayParty.lastElement(breakfast);
 
         //: Then
+        Assert.assertEquals("The result is not the last element", expected, actual);
     }
 
     //TODO Define the method lastButOneTest
