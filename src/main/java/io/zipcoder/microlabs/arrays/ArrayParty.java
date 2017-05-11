@@ -55,22 +55,19 @@ public class ArrayParty {
     }
 
 
-
-
-
-
-
-    public String compressionArray(String[] inputArray){
+    public String compressionArray(String[] inputArray) {
         String output = "*** Output ***";
-        String[] arr = new String[inputArray.length];
-        for(int i = 0; i <= inputArray.length; i++){
-            if(i
+
+        for (int i = 0; i < inputArray.length - 1; i++) {
+            if (inputArray[i] != inputArray[i + 1]) {
+                output += "\n" + inputArray[i];
+            }
+
         }
 
+        output += "\n" + inputArray[inputArray.length - 1];
 
-
-
-        return "";
+        return output;
     }
 
     //TODO Define the method pack

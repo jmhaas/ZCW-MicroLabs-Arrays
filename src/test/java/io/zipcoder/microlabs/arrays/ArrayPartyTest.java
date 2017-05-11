@@ -101,7 +101,7 @@ public class ArrayPartyTest {
     @Test
     public void compressionArrayTest(){
         //: Given
-        String [] compression = {"1,1,3,3,3,2,2,2,1,1,1,1,4,4,4,4"};
+        String [] compression = {"1","1","3","3","3","2","2","2","1","1","1","1","4","4","4","4"};
 
         ArrayParty arrayParty = new ArrayParty();
         String expected = "*** Output ***\n" +
