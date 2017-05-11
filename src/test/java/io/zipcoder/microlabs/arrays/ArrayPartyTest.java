@@ -75,11 +75,10 @@ public class ArrayPartyTest {
         //: Then
         Assert.assertEquals("The result is not the second to last element", expected, actual);
     }
-    //TODO Define the method isPalindromeTest
     @Test
     public void palindromeArrayTest(){
         //: Given
-        String [] palindromic = {"Sausage", "Eggs", "Beans",
+        String[] palindromic = {"Sausage", "Eggs", "Beans",
                 "Beans", "Eggs", "Sausage"};
         ArrayParty arrayParty = new ArrayParty();
         String expected = "*** Output ***\n" +
@@ -101,7 +100,7 @@ public class ArrayPartyTest {
     @Test
     public void compressionArrayTest(){
         //: Given
-        String [] compression = {"1","1","3","3","3","2","2","2","1","1","1","1","4","4","4","4"};
+        String[] compression = {"1","1","3","3","3","2","2","2","1","1","1","1","4","4","4","4"};
 
         ArrayParty arrayParty = new ArrayParty();
         String expected = "*** Output ***\n" +
@@ -119,13 +118,24 @@ public class ArrayPartyTest {
         Assert.assertEquals("The result is not compressed", expected, actual);
     }
 
+    @Test
+    public void packageArrayTest(){
+        //: Given
+        char[] letters = {'a', 'a', 'a', 'a', 'b','c','c','a','a','d','e','e','e','e'};
+        ArrayParty arrayParty = new ArrayParty();
+        String expected = "*** Output ***\n" +
+                "aaaa\n" +
+                "b\n" +
+                "cc\n" +
+                "aa\n" +
+                "d\n" +
+                "eeee";
 
 
+        //: When
+        String actual = arrayParty.packageArray(letters);
 
-
-    //TODO Define the method compressTest
-
-    //TODO Define the method packTest
-
-
+        //: Then
+        Assert.assertEquals("The result is not packaged", expected, actual);
+    }
 }

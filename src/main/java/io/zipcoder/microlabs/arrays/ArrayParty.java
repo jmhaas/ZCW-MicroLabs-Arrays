@@ -70,7 +70,21 @@ public class ArrayParty {
         return output;
     }
 
-    //TODO Define the method pack
+    public String packageArray(char[] inputArray) {
+        String output = "*** Output ***\n";
+        for (int i = 0; i < inputArray.length; i++) {
+            if(inputArray.length - 1 == i){
+                output += inputArray[i];
+                return output;
+            }
+            if (inputArray[i] == inputArray[i+1] || inputArray[i] == inputArray[i]) {
+                output += "" + inputArray[i];
+            }
+            if (inputArray[i] != inputArray[i+1]) {
+                output += "\n";
+            }
+        }
 
-
+        return output;
+    }
 }
