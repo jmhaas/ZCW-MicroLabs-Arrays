@@ -62,6 +62,10 @@ public class ArrayParty {
 
     public String compressionArray(String[] inputArray){
         String output = "*** Output ***";
+        String[] arr = new String[inputArray.length];
+        for(int i = 0; i <= inputArray.length; i++){
+            if(i
+        }
 
 
 
